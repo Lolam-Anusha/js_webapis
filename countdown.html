@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- count down from 10 to 0 -->
+
+    <script>
+        let countDown = 10;
+        const intervalId = setInterval(() => {
+            console.log(countDown)
+            countDown--
+            if(countDown<0){
+                clearInterval(intervalId);
+                console.log("count down ended")
+            }
+        }, 1000);
+        
+    </script>
+</body>
+</html>
